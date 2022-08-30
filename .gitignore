@@ -1,0 +1,29 @@
+# Data files
+*.zip
+*/data/*
+!*/data/.keep
+
+*/resources/*
+!*/resources/.keep
+
+# venv
+auto-grade-tool-env
+
+# Environments, IDE settings
+.direnv/
+.vscode/
+
+# Pycache
+**/__pycache__/
+
+# Log files
+*.log
+
+# MAC OS
+.DS_Store
+
+# test
+.pytest_cache/
+
+# develop
+test_data
