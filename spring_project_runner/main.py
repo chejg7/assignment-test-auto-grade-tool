@@ -39,7 +39,7 @@ def build_and_parse(target: str) -> typing.List[dict]:
         )
     elif target == "kotlin":
         subprocess_result = subprocess.run(
-            ["gradle", "test"],
+            ["gradle", "clean", "test"],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
             timeout=300,
