@@ -12,6 +12,7 @@ auto-grade-tool-env
 # Environments, IDE settings
 .direnv/
 .vscode/
+.env
 
 # Pycache
 **/__pycache__/
@@ -27,3 +28,4 @@ auto-grade-tool-env
 
 # develop
 test_data
+*.xlsx
