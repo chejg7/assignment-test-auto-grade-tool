@@ -5,6 +5,7 @@
 
 */resources/*
 !*/resources/.keep
+chromedriver
 
 # venv
 auto-grade-tool-env
