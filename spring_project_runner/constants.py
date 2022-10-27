@@ -4,7 +4,7 @@ __CURRENT_FILE_PATH = Path(__file__).absolute()
 
 RESOURCE_PATH = __CURRENT_FILE_PATH.parent / "resources"
 
-TEST_FILES_RELATIVE_PATH = "src/test/java/com/szs/account/api"
+TEST_FILES_RELATIVE_PATH = "src/test/java/com/ecommerce/market"
 
 SUREFILE_REPORTS = {
     "java": "target/surefire-reports",

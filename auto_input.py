@@ -27,7 +27,7 @@ for row in ws:
         continue
 
     driver.get(url)
-    driver.find_element(By.XPATH, "/html/body/div[1]/div/div[2]/div[1]/div/a[1]").click()
+    driver.find_element(By.XPATH, "/html/body/div[1]/div/div[2]/div[1]/div/a[2]").click()
     driver.implicitly_wait(3)
 
     for index in range(24):

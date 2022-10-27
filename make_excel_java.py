@@ -1,8 +1,8 @@
 import json
 import openpyxl
 
-TARGET_JSON_FILE = "spring_project_runner/data/final_result 2.json"
-RESULT_EXCEL_FILE_NAME = "3o3_backend_java.xlsx"
+TARGET_JSON_FILE = "spring_project_runner/data/final_result.json"
+RESULT_EXCEL_FILE_NAME = "backend_java_result.xlsx"
 
 wb = openpyxl.Workbook()
 wb.active.title = "SHEET"
@@ -392,10 +392,13 @@ def make_excel_2():
         ox_list = ["X" for i in range(total_api_cnt)]
         current_score = 0
 
-        for item in user_data[user]:
-            test_name = item["name"]
-            current_score += test_set[test_name]
-            ox_list[test_list.index(test_name)] = "O"
+        if type(user_data[user]) is str:
+            ox_list += ["Build Fail"]
+        elif type(user_data[user]) is list:
+            for item in user_data[user]:
+                test_name = item["name"]
+                current_score += test_set[test_name]
+                ox_list[test_list.index(test_name)] = "O"
 
         sheet.append([user, current_score] + ox_list)
 
